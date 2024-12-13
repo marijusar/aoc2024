@@ -78,8 +78,7 @@ def dfs(i, stone) :
 part_two = 0
     
 for stone in stones :
-    dfs(75, stone)
-    part_two += cache[(stone, 75)]
+    part_two += dfs(75, stone)
 
 print(f"part two answer is {part_two}")
 
